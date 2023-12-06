@@ -1,7 +1,7 @@
 ---
 title: "kpkg design decisions"
 date: 2023-12-07T00:10:00+03:00
-draft: true
+draft: false
 ---
 
 # Preface
