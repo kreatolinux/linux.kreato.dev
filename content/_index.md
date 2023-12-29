@@ -40,6 +40,6 @@ Look at [the documentation](./docs) to understand how Kreato Linux works! You ca
 # Sponsors
 We are grateful for the support received by the following organizations:
 
-[Tutanota](https://tutanota.com)
+[Tuta](https://tuta.com)
 
 [1Password](https://1password.com)
