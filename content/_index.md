@@ -22,7 +22,7 @@ Nothing is stopping you from using other init systems, such as systemd and OpenR
 ## Source/Binary hybrid package manager
 Kreato Linux uses kpkg, a package manager written in Nim that gives you the choice of building or installing binaries with ease. This way you can choose what's best for your usecase.
 
-Kpkg is fast, and simple. It supports scripts named runfiles that allow you to easyly write packages, similar to other script-based formats. You can learn more about it from the kpkg_run(5) manpage.
+Kpkg is fast, and simple. It supports scripts named runfiles that allow you to easily write packages, similar to other script-based formats. You can learn more about it from the kpkg_run(5) manpage.
 
 ## Good documentation
 Kreato Linux uses manpages for its documentation. A documentation webpage is also available. Manpages are constantly updated and the code has been written in a way to be understandable.
