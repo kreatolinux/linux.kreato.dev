@@ -58,11 +58,12 @@ jobs:
           nimble install cligen fusion -y
           make genpkglist
           sudo mv out/genpkglist /bin
+          cd ..
       
       - name: Add manpages to documentation
         run: |
+          cd src
           cp -vf man/*.md "$GITHUB_WORKSPACE/content/docs/manpages" 
-          cd ..
 
       - name: Install Hugo CLI
         run: |
