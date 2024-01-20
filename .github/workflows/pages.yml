@@ -51,6 +51,11 @@ jobs:
           cd ..
           rm -rf nim-*
 
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          submodules: recursive
+
       - name: Build genpkglist
         run: |
           git clone https://github.com/kreatolinux/src
@@ -60,11 +65,6 @@ jobs:
           sudo mv out/genpkglist /bin
           cd ..
       
-      - name: Checkout
-        uses: actions/checkout@v3
-        with:
-          submodules: recursive
-
       - name: Add manpages to documentation
         run: |
           cd src
