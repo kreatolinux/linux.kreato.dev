@@ -62,8 +62,7 @@ jobs:
       
       - name: Add manpages to documentation
         run: |
-          mkdir "$GITHUB_WORKSPACE/content/docs/manpages"
-          cp -f man/*.md "$GITHUB_WORKSPACE/content/docs/manpages"
+          cp -vf man/*.md "$GITHUB_WORKSPACE/content/docs/manpages"
    
       - name: Install Hugo CLI
         run: |
