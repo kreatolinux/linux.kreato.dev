@@ -68,7 +68,9 @@ jobs:
       - name: Add manpages to documentation
         run: |
           cd src
-          cp -vf man/*.md "$GITHUB_WORKSPACE/content/docs/manpages" 
+          for i in man/*.md; do
+            genpkglist generateManpage --file="$i" --output="$GITHUB_WORKSPACE/content/docs/manpages/$(basename $i)"
+          done
           cd ..
           rm -rf src
 
