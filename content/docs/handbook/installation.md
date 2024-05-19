@@ -19,7 +19,7 @@ If you do not have a working Linux install, we recommend [Arch Linux LiveISO](ht
 
 ### Here be dragons! 
 
-Keep in mind that Kreato Linux is in ALPHA stage and **will** have issues.
+Keep in mind that Kreato Linux is in Beta stage and *may* have issues.
 
 If you want a more polished experience, please wait until it is announced to be stable.
 
