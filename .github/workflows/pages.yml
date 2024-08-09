@@ -33,7 +33,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       HUGO_VERSION: 0.119.0
-      NIM_VERSION: 2.0.0
+      NIM_VERSION: 2.0.8
     steps: 
       - name: Install Nim
         run: |
@@ -52,7 +52,7 @@ jobs:
           rm -rf nim-*
 
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@main
         with:
           submodules: recursive
 
@@ -81,7 +81,7 @@ jobs:
       
       - name: Setup Pages
         id: pages
-        uses: actions/configure-pages@v2
+        uses: actions/configure-pages@main
       
       - name: Generate packages directory
         run: |
@@ -100,7 +100,7 @@ jobs:
             --minify
       
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@main
         with:
           path: ./public
 
@@ -114,4 +114,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v1
+        uses: actions/deploy-pages@main
