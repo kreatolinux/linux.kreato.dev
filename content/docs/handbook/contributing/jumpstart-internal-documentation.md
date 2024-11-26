@@ -4,7 +4,7 @@ draft: false
 ---
 
 ## Communication
-Communication happens through UNIX sockets. `/run/jumpstart.lock` is the default socket path.
+Communication happens through UNIX sockets. `/run/jumpstart.sock` is the default socket path.
 
 ## Interacting with services
 
