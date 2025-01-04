@@ -83,13 +83,6 @@ jobs:
         id: pages
         uses: actions/configure-pages@main
       
-      - name: Generate packages directory
-        run: |
-          git clone https://github.com/kreatolinux/kpkg-repo
-          mkdir "$GITHUB_WORKSPACE/content/packages"
-          genpkglist generate --all --pkgPath=kpkg-repo --output="$GITHUB_WORKSPACE/content/packages" -v      
-          rm -rf kpkg-repo
- 
       - name: Build with Hugo
         env:
           # For maximum backward compatibility with Hugo modules
