@@ -29,7 +29,7 @@ Any basic issues/anything not related to Kreato Linux will be closed without war
 
 
 ## Get rootfs tarball
-First step should be to get the rootfs tarball. Kreato Linux installs through a rootfs (Like Gentoo). You can get the latest nightly through [Github Actions](https://github.com/kreatolinux/src/actions/workflows/build-rootfs.yml?query=is%3Asuccess).
+First step should be to get the rootfs tarball. Kreato Linux installs through a rootfs (Like Gentoo). You can get the latest nightly through [The downloads page](https://linux.kreato.dev/downloads/)
 
 ### Choosing the right tarball
 Kreato Linux is a modular distribution. There are four build types currently available.
@@ -175,7 +175,7 @@ Then you can get apps from Flathub by running; `flatpak remote-add --if-not-exis
 Kreato Linux only offers `sway` for now.
 You can install sway by running `kpkg install sway`.\
 More Wayland window managers are coming soon.\
-You can also install foot, a terminal by running `kpkg install foot`\
+You can also install foot, a terminal by running `kpkg install foot`.
 
 ## Installing Desktop Environments
 Kreato Linux only offers GNOME for now in terms of desktop environments.
